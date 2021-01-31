@@ -9,9 +9,10 @@ import com.example.miwok_translation.databinding.WordListBinding
 
 class FamilyActivity : AppCompatActivity() {
     var binding: WordListBinding?=null
-    lateinit var media:MediaPlayer
+     lateinit var media:MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         binding= WordListBinding.inflate(layoutInflater)
+        media=MediaPlayer.create(this,R.raw.color_red)
         super.onCreate(savedInstanceState)
         setContentView(binding!!.root)
         fun getfamilywords():ArrayList<Word>{

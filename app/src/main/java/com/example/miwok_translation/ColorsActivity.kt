@@ -8,10 +8,11 @@ import com.example.miwok_.WordAdapter
 import com.example.miwok_translation.databinding.WordListBinding
 
 class ColorsActivity : AppCompatActivity() {
-    lateinit var media:MediaPlayer
+     lateinit var media:MediaPlayer
     var binding: WordListBinding?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         binding= WordListBinding.inflate(layoutInflater)
+        media=MediaPlayer.create(this,R.raw.color_red)
         super.onCreate(savedInstanceState)
         setContentView(binding!!.root)
 
